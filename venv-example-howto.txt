@@ -1,0 +1,65 @@
+ ######## which python?, global pip?, pipenv or venv?
+ 
+ 1999  python3 --version
+ 2002  cd PythonFlaskAI_c8m1/
+ 2004  python3 welcome101/welcome.py 
+ 2006  python3.10 -m pip install numpy
+ 2007  pipenv
+ 2008  pip
+ 2010  python3 -m http.server
+ 2011  pipenv
+ 2012  python --version
+ 2013  pip --version
+ 2017  cd venv/
+
+
+######## VENV START HERE ######## create v0, local pip install dependancies, freeze requirments, run script
+
+######## LAB START ########
+
+python3 --version
+python3 -m venv venv
+source venv/bin/activate
+pip freeze
+pip install Flask==2.2.2
+pip freeze
+pip freeze > requirements.txt
+touch server.py
+flask --app server --debug run
+pip list
+pip check
+pip uninstall Werkzeug
+cat "Werkzeug==2.2.2" >> requirements.txt
+pip install -r requirements.txt
+pip list
+pip check
+pip show pip
+flask --app server --debug run
+python3 server.py
+http://127.0.0.1:5000/
+curl -X GET -i -w '\n' localhost:5000
+
+
+https://note.nkmk.me/en/python-pip-install-requirements/
+https://note.nkmk.me/en/python-pip-usage/
+
+######## LAB END ########
+
+
+ 2019  python3 -m venv virtualenviroments/v0
+ 2020  source virtualenviroments/v0/bin/activate
+ 2021  pip list
+ 2022  pip freeze > requirments/v0-requirments.txt
+ 2023  cat requirments/v0-requirments.txt 
+ 2026  pip list
+ 2027  pip install numpy 
+       OR python3.10 -m pip install numpy
+ 2031  pip freeze > requirments/v0-requirments.txt
+ 2032  cat requirments/v0-requirments.txt 
+ 2034  python3 ../PythonFlaskAI_c8m1/welcome101/welcome.py 
+ 2035  deactivate 
+ 2036  python3 ../PythonFlaskAI_c8m1/welcome101/welcome.py 
+ 2037  history
+ 2039  source virtualenviroments/v0/bin/activate
+ 2040  python3 ../PythonFlaskAI_c8m1/welcome101/welcome.py
+
